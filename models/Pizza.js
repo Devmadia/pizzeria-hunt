@@ -7,6 +7,10 @@ const PizzaSchema = new Schema({
     createdBy: {
         type: String
     },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
     size: {
         type: String,
         default: 'Large'
